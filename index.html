@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS en tablas</title>
+    <style>
+        table,td,th{
+            border:2px solid blue;
+            border-collapse: collapse;
+        }
+        table {width:40%}
+        tr {height: 80px;}
+        td {vertical-align: center;
+        text-align: right;
+        color:blue
+         }
+        thead{background-color: blue;
+        color:green;}
+        tr:nth-child(odd){background-color: gold;}
+        tr:nth-child(even) {background-color: aqua;}
+        table{margin: auto;}
+        tfoot{color:red}
+        tr:hover {background-color: gray;}
+    </style>
+</head>
+<body>
+    <h1>CSS en tablas</h1>
+    <table>
+        <colgroup>
+            <col style="width:300px;">
+            <col style="width:100px;">
+        </colgroup>
+        <tr id="primera-fila">
+        <thead>
+            <th>
+                Articulo
+            </th>
+            <th>
+                Precio
+            </th>  
+        </thead>
+        </tr>
+        <tr>
+            <td>Aceite de Oliva</td>
+            <td>10.00€</td>
+        </tr>
+        <tr>
+            <td>Tortas de Alcazar</td>
+            <td>6€</td>
+        </tr>
+         <tr>
+            <td>Queso Manchego</td>
+            <td>30.00€</td>
+        </tr>
+        <tfoot>
+        <tr>
+            <td>Jamón</td>
+            <td>30.00€</td>
+        </tr>
+         
+        <tr>
+            <td>Chorizo</td>
+            <td>30.00€</td>
+        </tr>
+        <tr>
+            <td>Torreznos</td>
+            <td>30.00€</td>
+        </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
